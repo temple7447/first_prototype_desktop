@@ -1,0 +1,23 @@
+{
+  "name": "third",
+  "version": "1.0.0",
+  "description": "testing app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": ["electron", "app", "example"],
+  "author": "Temple",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "mac": {
+      "identity": " Your Company (ABC12345)"
+    }
+  }
+}
