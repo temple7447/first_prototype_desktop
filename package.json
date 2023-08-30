@@ -8,7 +8,11 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "keywords": ["electron", "app", "example"],
+  "keywords": [
+    "electron",
+    "app",
+    "example"
+  ],
   "author": "Temple",
   "license": "ISC",
   "devDependencies": {
@@ -19,5 +23,8 @@
     "mac": {
       "identity": " Your Company (ABC12345)"
     }
+  },
+  "dependencies": {
+    "firebase": "^10.3.0"
   }
 }

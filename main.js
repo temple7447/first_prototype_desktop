@@ -6,11 +6,22 @@ const path = require('path');
 
 function createWindow() {
     const LoginWindow = require('./Window/Login/LoginWindow')
+    // const DasboardWindow = require('./Window/Dashboard/DasboardWindow')
+
+
+ 
+
+
+
     LoginWindow.loadFile('login.html');
     LoginWindow.webContents.openDevTools()
-    const DasboardWindow = require('./Window/Dashboard/DasboardWindow')
-    DasboardWindow.loadFile('index.html');
-    DasboardWindow.webContents.openDevTools()
+       ipcMain.on('signin-request', async (event, { email, password })=>{
+      console.log('Received sign-in request:', email, password);
+
+    })
+
+    // DasboardWindow.loadFile('index.html');
+    // DasboardWindow.webContents.openDevTools()
 }
 
 
