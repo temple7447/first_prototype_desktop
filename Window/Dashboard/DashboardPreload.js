@@ -7,5 +7,13 @@ contextBridge.exposeInMainWorld('electronAPI', {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const submitBtn = document.getElementById("submit-button");
+
+  submitBtn.addEventListener('click', () => {
+    ipcRenderer.send('logout');
+  });
+});
+
 
 
